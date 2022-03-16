@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  display: flex;
+  perspective: 1000;
+  background: linear-gradient(to bottom right, dodgerblue 50%, darken(dodgerblue, 5%) 50%);
+}
+
+.notepad {
+  margin: auto;
+  overflow: auto;
+  height: 80vmin;
+  width: 60vmin;
+  border-radius: 1.5em;
+  padding: 0 2.5em;
+  font-size: 1.125em;
+  line-height: 2.25em;
+  transform: skew(20deg) rotateY(10deg) rotateZ(-10deg) scale(0.9);
+  font-family: 'Kaushan Script', cursive;
+  background:
+    linear-gradient(to bottom right, rgba(black, 0), rgba(black, 0.15)),
+    linear-gradient(to right, rgba(deeppink, 0) 1.875em, deeppink 1.875em, rgba(deeppink, 0) 2em) bottom left,
+    linear-gradient(to bottom, rgba(cyan, 0) 1.5em, cyan 1.5em, rgba(cyan, 0) 1.625em) bottom left,
+    white;
+  ;
+  background-size: auto, auto, 2em;
+  box-shadow:
+    -0.125em 0.125em #d4d4d4,
+    -0.25em 0.25em #ddd,
+    -0.375em 0.375em #d4d4d4,
+    -0.5em 0.5em #ddd,
+    -0.625em 0.625em #d4d4d4,
+    -0.75em 0.75em #ddd,
+    -0.875em 0.875em #d4d4d4
+   ;
+  
+  &:focus {
+    outline: none;
+  }
+}
